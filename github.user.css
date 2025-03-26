@@ -1,0 +1,28 @@
+:root{
+    /* 源代码模式的很多样式都要用到--monospace，在这里替换为自己需要的字体，包括不限于源代码模式的空格字符、|字符 */
+    --monospace:"CodeNewRoman Nerd Font Mono Alter";
+}
+
+/* 利用margin-left控制缩进，实现层级缩进。 */
+h1+*{margin-left: 40px;}
+h2+*{margin-left: 80px;}
+h3+*{margin-left: 120px;}
+h4+*{margin-left: 160px;}
+h5+*{margin-left: 200px;}
+h6+*{margin-left: 240px;}
+
+h1{margin-left: 0;}
+h2{margin-left: 40px;}
+h3{margin-left: 80px;}
+h4{margin-left: 120px;}
+h5{margin-left: 160px;}
+h6{margin-left: 200px;}
+
+/* 改变字体 */
+body{
+    font-family: var(--monospace);
+}
+
+mark{
+    background-color: orange;
+}
